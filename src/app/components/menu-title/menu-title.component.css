@@ -1,17 +1,25 @@
 .container__menu-title{
   color: white;
+  text-align: center;
 }
 
 .container__menu-title > h1{
   margin-top: 15px;
   margin-bottom: 15px;
-  font-size: 135px;
+  font-size: clamp(30px, 7vw, 135px);
   font-family: 'segoe UI';
   display: flex;
   justify-content: center;
+
+  background: linear-gradient(90deg,  white, red, blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: rgba(0, 0, 0, 0.2);
 }
 
 .container__menu-title > hr{
-  margin-top: 20px;
+  margin-top: var(--defalut-padding);
   margin-bottom: 5px;
 }
+
+
