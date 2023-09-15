@@ -4,7 +4,6 @@
 }
 
 .container__small-card-content {
-  padding-right: var(--defalut-padding);
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +35,7 @@
 
 @media screen and (min-width: 768px) {
   .container__small-card-content {
-
+    padding-right: var(--defalut-padding);
     flex-direction: row;
   }
 
