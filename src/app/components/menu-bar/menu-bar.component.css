@@ -3,10 +3,43 @@
 .container__menu-bar > ul{
   display: flex;
   flex-direction: row;
+  margin: auto;
 }
 
 .container__menu-bar > ul > li{
-  margin-right: 20px;
   list-style: none;
+  padding-right: var(--defalut-padding);
+  padding-left: var(--defalut-padding);
 }
 
+
+.container__menu-bar > ul > li > a{
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  font-size: 2rem;;
+}
+
+.container__menu-bar > ul > li > a > img {
+width: 50px;
+}
+
+
+.container__menu-bar > ul > li > a > p {
+  display: none;
+}
+
+@media screen and (min-width: 768px) { 
+  .container__menu-bar > ul > li > a > p {
+  display: unset;
+  }
+
+  .container__menu-bar > ul > li > a > img {
+    padding-right: 10px;
+  }
+
+  .container__menu-bar > ul > li{
+    margin-right: var(--defalut-padding);
+    
+  }
+}
