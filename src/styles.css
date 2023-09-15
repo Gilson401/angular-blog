@@ -1,13 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --defalut-padding: 20px;
+  --defalut-margin: 20px;
+  --desktop-padding: 200px;
+}
+
 *{
   margin:0;
   padding:0;
   box-sizing: border-box;
   background-color: #111111;
   color:white;
-  font-family: 'Segoe UI';
+  font-family: 'Roboto', sans-serif;
 }
 
 a{
   text-decoration: none;
+}
+
+body{
+  height: auto;
 }
